@@ -1,5 +1,14 @@
-﻿.siriusHome_container {
-    width: 100%;
+﻿body {
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+p {
+  margin: 8px;
+}
+
+.--width {
+  width: 100%;
     max-width: 1280px;
     margin: 0 auto;
 }
@@ -19,18 +28,280 @@
 }
 
 .siriusHome_navBar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      
-      .siriusHome_navBar ul li {
-        float: right;
-      }
-      
-      .siriusHome_navBar ul li a {
-        display: block;
-    padding: 18px;
-    text-decoration: none;
-      }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.siriusHome_navBar ul li {
+  float: right;
+}
+
+.siriusHome_navBar ul li a {
+  display: block;
+  padding: 18px;
+  text-decoration: none;
+}
+
+.siriusHome_weatherContainerDeck {
+  display: flex;
+}
+
+.siriusHome_weatherContainerTitle {
+  padding: 14px;
+  color: #ffffff;
+  background-color: #123052;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.siriusHome_weatherIcon::before {
+  background-image: url(../asset/icon-party-sunny.svg);
+  background-repeat: no-repeat;
+  background-position: 0em 0em;
+  background-size: 2em 2em;
+    width: 2em;
+    height: 2em;
+  display: inline-block;
+  content: "";
+}
+
+.siriusHome_weatherContainer {
+  width: 25%;
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.siriusHome_weatherContainer0 {
+    background-color: #0D7E88 ;
+}
+
+.siriusHome_weatherContainer1 {
+    background-color: #D09378;
+}
+
+.siriusHome_weatherContainer2 {
+    background-color: #405B5D;
+}
+
+.siriusHome_weatherContainer3 {
+    background-color: #74A748;
+}
+
+.siriusHome_weatherText {
+font-size: 20px;
+padding: 14px 0px;
+}
+.siriusHome_weatherCelcius {
+  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+}
+
+
+
+
+.siriusHome_destinationContainerDeck {
+  display: flex;
+    overflow-x: scroll;
+}
+
+.siriusHome_destinationText {
+  font-family: 'Roboto Slab';
+    font-size: 30px;
+    color: #123052;
+    font-weight: bold;
+}
+
+.siriusHome_destinationImageContainer {
+  margin: 20px;
+}
+
+.siriusHome_thumbnailImage {
+  border-radius: 10px 10px 10px 0px;
+    width: 220px;
+    height: 220px;
+}
+
+.siriusHome_destinationCountryName {
+  padding-top: 8px;
+  color: #ccc;
+}
+
+.siriusHome_imageDeck {
+  position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.siriusHome_backgroundImage {
+  background-image: url('../asset/promo-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 43.33%;
+  background-position-x: 10%;
+}
+
+.siriusHome_imageContent {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  
+}
+
+.siriusHome_imageContent1 {
+  font-size: 60px;
+}
+
+.siriusHome_imageContent2 {
+  font-size: 35px;
+}
+
+.siriusHome_quote {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.siriusHome_quoteForm {
+  width: 320px;
+}
+
+form label {
+  display: inline-block;
+  width: 100px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+label.error {
+  display: inline;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+
+.siriusHome_footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #070617;
+}
+.siriusHome_footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.siriusHome_footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.siriusHome_footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.siriusHome_footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.siriusHome_footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .siriusHome_footer .col {
+    width: 33%;
+  }
+  .siriusHome_footer .col h1 {
+    font-size: 14px;
+  }
+  .siriusHome_footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .siriusHome_footer .col {
+      width: 50%;
+    }
+    .siriusHome_footer .col h1 {
+      font-size: 14px;
+    }
+    .siriusHome_footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .siriusHome_footer .col {
+    width: 100%;
+  }
+}

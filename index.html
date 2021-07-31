@@ -1,51 +1,131 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Sirius Coding Round</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="styleSheet" href="css/homePage.css" />
 </head>
+
 <body>
 
     <div class="siriusHome_container">
-        <div class="siriusHome_headerBanner">
-            <div class="siriusHome_test1"><p>Book now to get exciting travel deals. Upto 40% off on credit card payments</p><br>
-            <p>Offers ends in <span class="siriusHome_timer js-timer"></span></p>            
-        </div>
+        <div class="siriusHome_headerBanner --width">
+            <div class="siriusHome_test1">
+                <p>Book now to get exciting travel deals. Upto 40% off on credit card payments</p><br>
+                <p>Offers ends in <span class="siriusHome_timer js-timer"></span></p>
+            </div>
         </div>
 
-    <div class="siriusHome_navBar">
-        <ul>
-            <li><a href="#quote">Get a Quote</a></li>
-            <li><a href="#destination">Destination</a></li>
-            <li><a href="#weather">Weather</a></li>
-          </ul>
+        <div class="siriusHome_navBar --width">
+            <ul>
+                <li><a href="#quote">Get a Quote</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#weather">Weather</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="siriusHome_welcomeBanner --width"></div>
+
+
+
+        <div class="siriusHome_weather --width"></div>
+
+
+
+        <div class="siriusHome_destination --width">
+            <p class="siriusHome_destinationText">Featured Destinations</p>
+
+        </div>
+
+        <div class="siriusHome_imageDeck">
+            <div class="siriusHome_backgroundImage">
+                <div class="siriusHome_imageContent">
+                    <p class="siriusHome_imageContent1">PLAN A TRIP</p>
+                    <p class="siriusHome_imageContent2">Make your vacation the most <br> memorable one</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="siriusHome_quote --width">
+            
+            <div class="siriusHome_quoteForm">
+                <p>Travelling as a group? Get a Quote</p>
+                <form id="first_form">
+                    <div>
+                        <p>Your Name:</p>
+                        <input type="text" id="name" name="name"></input>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Contact No:</p>
+                            <input type="text" id="contact" name="contact"></input>
+                        </div>
+                        <p>Email:</p>
+                        <input type="email" id="email" name="email"></input>
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="siriusHome_footer">
+            <div class="contain --width">
+                <div class="col">
+                  <h1>Trip Zone</h1>
+                  <ul>
+                    <li>About</li>
+                    <li>Awards</li>
+                    <li>Contact Us</li>
+                    <li>Feedback</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h1>Main Offices</h1>
+                  <ul>
+                    <li>The United States</li>
+                    <li>India</li>
+                    <li>Brazil</li>
+                    <li>Canada</li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h1>Sub Office</h1>
+                  <ul>
+                    <li>Australia</li>
+                    <li>England</li>
+                    <li>France</li>
+                    <li>Germany</li>
+                  </ul>
+                </div>
+                
+                <div class="col social">
+                  <h1>Disclaimer</h1>
+                  <ul>
+                    <li>This layout is part of Sirius UI Recruitments.All the above content has no direct relation with Sirius business.</li>
+                    
+                  </ul>
+                </div>
+              <div class="clearfix"></div>
+              </div>
+
+
+        </div>
 
     </div>
-
-
-    <div class="siriusHome_welcomeBanner"></div>
-
-
-
-    <div class="siriusHome_weather"></div>
-
-
-
-    <div class="siriusHome_destination"></div>
-
-    <div class="siriusHome_imageDeck"></div>
-
-    <div class="siriusHome_quote"></div>
-
-    <div class="siriusHome_container"></div>
-
-</div>
 
 
 </body>
 <script type="text/javascript" src="libraries/jquery.js"></script>
 <script type="text/javascript" src="libraries/jqueryCountDownTimer.js"></script>
 <script type="text/javascript" src="js/homePage.js"></script>
+
 </html>
