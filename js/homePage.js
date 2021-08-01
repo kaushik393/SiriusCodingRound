@@ -40,24 +40,32 @@ function scroll(event) {
 function countDown() {
 
     var note = $('.js-timer'),
-        ts = new Date(2021, 07, 8);
+        ts = new Date(2021, 07, 08, 18,00,00),
+        offerEnd = true;
 
     if ((new Date()) > ts) {
-        ts = (new Date()).getTime() + 10 * 24 * 60 * 60 * 1000;
-        newYear = false;
+        ts = (new Date()).getTime(),
+        offerEnd = false;
     }
 
-    $('#countdown').countdown({
+    $('.js-timer').countdown({
         timestamp: ts,
         callback: function (days, hours, minutes, seconds) {
 
             var message = "";
-
+            if(offerEnd){
             message += days + "d" + (days == 1 ? '' : '') + " ";
             message += hours + "h" + (hours == 1 ? '' : '') + " ";
             message += minutes + "m" + (minutes == 1 ? '' : '') + " ";
             message += seconds + "s" + (seconds == 1 ? '' : '') + " <br />";
             note.html(message);
+            }
+            else {
+                message += "You have just missed the above offer!! Please wait for next exciting offer";
+                $('.siriusHome_offerText2').html(message)
+            }
+
+            
         }
     });
 
